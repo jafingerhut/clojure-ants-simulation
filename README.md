@@ -39,6 +39,16 @@ As of 2019, if you click on the "Get Started!" link on the [Clojure
 site's home page](https://clojure.org), there are instructions for a
 macOS or Linux system for "Clojure install and CLI tools".
 
+```
+Command 'java' not found, but can be installed with:
+
+sudo apt install default-jre              # version 2:1.11-72, or
+sudo apt install openjdk-11-jre-headless  # version 11.0.5+10-0ubuntu1
+sudo apt install openjdk-13-jre-headless  # version 13+33-1
+sudo apt install openjdk-14-jre-headless  # version 14~18-1
+sudo apt install openjdk-8-jre-headless   # version 8u232-b07-2ubuntu1
+```
+
 If you successfully follow those instructions, then the following
 sample session in a terminal shows a few commands, and sample output
 that should appear.  The prompt in the sample below is `$ `, which may
