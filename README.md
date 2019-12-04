@@ -65,7 +65,7 @@ If you successfully follow those instructions, then the following
 sample session in a terminal shows a few commands, and sample output
 that should appear.  The prompt in the sample below is `$ `, which may
 be different on your system.  Everything on a line after that is what
-you need type, or copy/paste:
+you need to type, or copy/paste:
 
 ```bash
 $ git clone https://github.com/jafingerhut/clojure-ants-simulation
