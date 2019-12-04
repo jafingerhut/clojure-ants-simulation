@@ -37,7 +37,12 @@ browser that supports Java applets.
 
 As of 2019, if you click on the "Get Started!" link on the [Clojure
 site's home page](https://clojure.org), there are instructions for a
-macOS or Linux system for "Clojure install and CLI tools".
+macOS or Linux system for "Clojure install and CLI tools".  You may
+need to install Java as well.
+
+For example, on an Ubuntu Linux system, if you type the command `java`
+in a terminal, you should see output similar to what is shown below,
+if Java is not already installed.
 
 ```
 Command 'java' not found, but can be installed with:
@@ -47,6 +52,13 @@ sudo apt install openjdk-11-jre-headless  # version 11.0.5+10-0ubuntu1
 sudo apt install openjdk-13-jre-headless  # version 13+33-1
 sudo apt install openjdk-14-jre-headless  # version 14~18-1
 sudo apt install openjdk-8-jre-headless   # version 8u232-b07-2ubuntu1
+```
+
+Installing Java 8 or 11 are good choices, if either of those are
+available, e.g. on Ubuntu Linux:
+
+```
+$ sudo apt-get install openjdk-11-jre-headless
 ```
 
 If you successfully follow those instructions, then the following
@@ -60,8 +72,13 @@ $ git clone https://github.com/jafingerhut/clojure-ants-simulation
 [ ... output of git command omitted ... ]
 
 $ cd clojure-ants-simulation
-$ clj
+$ clojure
 Clojure 1.10.1
+
+[The very first time you do this, some extra lines of output may
+appear here, indicating that the `clojure` command is downloading
+Clojure and a few packages it depends upon.]
+
 user=> 
 ```
 
@@ -76,6 +93,13 @@ gave the demo).
 ```clojure
 user=> (load-file "src/ants.clj")
 nil
+
+[If you run with Java version 11, you may see some scary-looking
+warnings output at this point, which you can ignore.  You can see a
+sample of similar warning messages, and why they appear if you are
+curious, here:
+
+https://clojure.org/guides/faq#illegal_access ]
 
 [A new window should appear, which has a blue rectangle on a white
 backgroun.  This is the "home" of the ants, where they begin the
